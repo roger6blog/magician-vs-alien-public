@@ -7,6 +7,7 @@
 **用途**：測量兒童的人格特質（Big Five 五大人格），決定配對的魔數動物
 
 **狀態**：已實作
+<img width="946" height="593" alt="image" src="https://github.com/user-attachments/assets/8764a535-d12f-49f5-b6ce-1d3a6bfc70d9" />
 
 ### 測量維度（共 15 題，每維度 3 題）
 
@@ -64,6 +65,9 @@
 **用途**：縱貫式追蹤孩子隨時間變化的數學態度
 
 **狀態**：已實作
+
+<img width="1720" height="1108" alt="image" src="https://github.com/user-attachments/assets/5b67db30-5016-43b5-bdfd-b3a1cb620123" />
+
 
 ### 題目（共 5 題）
 
