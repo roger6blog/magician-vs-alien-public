@@ -2,6 +2,9 @@
 
 ---
 
+<img width="959" height="604" alt="image" src="https://github.com/user-attachments/assets/cd0901ae-045f-4869-b748-90da5bc365f3" />
+
+
 ## 一、現行問題
 
 ### 目前的星數怎麼算？——用「死亡次數」決定
