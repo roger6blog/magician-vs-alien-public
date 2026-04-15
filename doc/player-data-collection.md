@@ -5,7 +5,29 @@
 
 ---
 
-## 一、學術用途數據
+## 一、總覽對照表
+
+| 類型 | 數據 | API / 資料庫 | 用途說明 |
+|------|------|------------|---------|
+| **學術** | 題目作答（正確率、反應時間） | `save_question_log.php` / `game_question_log` | 認知能力測量 |
+| **學術** | `excluded` 排除標記 | `game_question_log` | IRB 資料品質管控 |
+| **學術** | AF 測驗（baseline/posttest） | `af_test_manager.php` / `af_test_results` | 學習成效評估 |
+| **學術** | PPTQ-C（Big Five + 反應時間） | `save_questionnaire.php` / `user.personality_scores` | 人格與學習風格研究 |
+| **學術** | 數學態度問卷（縱向追蹤） | `save_questionnaire.php` / `questionnaire_single_responses` | 情意因素變化研究 |
+| **學術** | 遊戲績效（分數、時長、星數） | `save_data.php` / `training_history` | 學習表現追蹤 |
+| **學術** | 裝置環境（OS、螢幕、裝置型號） | `save_device_session.php` / `device_session_logs` | 裝置環境共變數控制 |
+| **學術** | 遊玩時長、前後台切換 | `save_device_session.php` / `device_session_logs` | 投入度與分心行為分析 |
+| **學術** | 性別、生日 | `save_user_profile.php` / `user` | 人口統計共變數 |
+| **非學術** | 帳號 / 密碼 / Session Token | `login_v2.php` / `sessions` | 身份驗證安全 |
+| **非學術** | 金幣 / 結晶 / 道具能力 | `coin_manager.php` 等 / `user_abilities_v2` | 遊戲內經濟系統 |
+| **非學術** | 連續登入天數 | `login_streak.php` | 留存獎勵機制 |
+| **非學術** | 排行榜分數 | `rank_data_json.php` | 社交競爭功能 |
+| **非學術** | 暱稱 / 動物選擇 | `save_user_profile.php` / `save_magic_animal.php` | 玩家個人化 |
+| **非學術** | 每日剩餘時間 / 最高連擊數 | `game_time_limit.php` / `update_max_combo.php` | 遊戲進度管理 |
+
+---
+
+## 二、學術用途數據
 
 ### 1. 遊戲題目作答記錄（`game_question_log`）
 
@@ -151,7 +173,7 @@ API：`save_user_profile.php` → 資料庫：`user`
 
 ---
 
-## 二、非學術用途數據（遊戲運營）
+## 三、非學術用途數據（遊戲運營）
 
 ### 1. 帳號與驗證
 
@@ -208,22 +230,3 @@ API：`rank_data_json.php`，回傳各遊戲的分數排名，用於玩家間競
 
 ---
 
-## 三、總覽對照表
-
-| 類型 | 數據 | API / 資料庫 | 用途說明 |
-|------|------|------------|---------|
-| **學術** | 題目作答（正確率、反應時間） | `save_question_log.php` / `game_question_log` | 認知能力測量 |
-| **學術** | `excluded` 排除標記 | `game_question_log` | IRB 資料品質管控 |
-| **學術** | AF 測驗（baseline/posttest） | `af_test_manager.php` / `af_test_results` | 學習成效評估 |
-| **學術** | PPTQ-C（Big Five + 反應時間） | `save_questionnaire.php` / `user.personality_scores` | 人格與學習風格研究 |
-| **學術** | 數學態度問卷（縱向追蹤） | `save_questionnaire.php` / `questionnaire_single_responses` | 情意因素變化研究 |
-| **學術** | 遊戲績效（分數、時長、星數） | `save_data.php` / `training_history` | 學習表現追蹤 |
-| **學術** | 裝置環境（OS、螢幕、裝置型號） | `save_device_session.php` / `device_session_logs` | 裝置環境共變數控制 |
-| **學術** | 遊玩時長、前後台切換 | `save_device_session.php` / `device_session_logs` | 投入度與分心行為分析 |
-| **學術** | 性別、生日 | `save_user_profile.php` / `user` | 人口統計共變數 |
-| **非學術** | 帳號 / 密碼 / Session Token | `login_v2.php` / `sessions` | 身份驗證安全 |
-| **非學術** | 金幣 / 結晶 / 道具能力 | `coin_manager.php` 等 / `user_abilities_v2` | 遊戲內經濟系統 |
-| **非學術** | 連續登入天數 | `login_streak.php` | 留存獎勵機制 |
-| **非學術** | 排行榜分數 | `rank_data_json.php` | 社交競爭功能 |
-| **非學術** | 暱稱 / 動物選擇 | `save_user_profile.php` / `save_magic_animal.php` | 玩家個人化 |
-| **非學術** | 每日剩餘時間 / 最高連擊數 | `game_time_limit.php` / `update_max_combo.php` | 遊戲進度管理 |
